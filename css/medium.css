@@ -1,0 +1,263 @@
+body
+{
+  margin: 0;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top
+{
+  background-image: linear-gradient(91.65deg, #FF3E3E 35.87%, #D90135 74.22%);
+  height: 44px;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter,sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  position: fixed;
+  z-index: 1;
+}
+
+.top a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.top p
+{
+  margin:0;
+}
+
+.logo
+{
+  position: absolute;
+  top: 44px;
+  padding-top: 36px;
+  padding-bottom: 20px;
+  height: 40.1px;
+  width: 108px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.link
+{
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom p
+{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bottom
+{
+  background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 138.14%);
+  height: 59px;
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.180085px;
+  text-transform: capitalize;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.2881px;
+  line-height: 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.far
+{
+  margin-right: 10px;
+}
+
+.middle
+{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 162px;
+  color: #ffffff;
+  /* left: 90px; */
+}
+
+.middle h1
+{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
+ justify-content: center;
+}
+
+.cards
+{
+  position: absolute;
+  top: 280px;
+  /* left: 170px; */
+
+  width: 81.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 255px;
+  height: 255px;
+  background-color: #1F1F1F;
+  border: 2px solid #1F1F1F;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all .3s ease;
+  margin-bottom: 45px;
+}
+
+.card:hover
+{
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+  transform: translate3d(0,-0.3rem,0) scale(1.05);
+  transition: all .3s ease;
+}
+
+.card .one
+{
+  height: 175px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.one img
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+.image_overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #FFFFFF;
+  display: flex;
+  font-family: Inter,cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+
+}
+
+.image_overlay_blur
+{
+  backdrop-filter: blur(5px);
+}
+
+.image_overlay > *
+{
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+}
+
+.image_overlay:hover
+{
+  opacity: 1;
+}
+
+.image_overlay:hover > *
+{
+  transform: translateY(0);
+}
+
+
+.card .two
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+}
+
+.card .main_para
+{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
+  width: 95%;
+
+}
+@media screen and (max-width: 380px)
+{
+  .cards
+  {
+    width: 50.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card
+  {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px)
+{
+  .cards
+  {
+    width: 81.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+  }
+
+
+}
